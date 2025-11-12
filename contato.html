@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Entre em Contato Conosco</title>
+    <meta name="description" content="Entre em contato, envie sugestões e compartilhe suas experiências sobre sustentabilidade">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Reciclagem e Sustentabilidade</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reciclagem.html">Reciclagem</a></li>
+                    <li><a href="dicas.html">Dicas Práticas</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p class="hero-subtitle">Sua opinião é importante! Compartilhe experiências, tire dúvidas ou envie sugestões.</p>
+            </div>
+        </section>
+        
+        <section class="content">
+            <div class="container">
+                <article class="main-content">
+                    <h2>Formulário de Contato</h2>
+                    <p>Use o formulário abaixo para entrar em contato conosco. Responderemos o mais breve possível!</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="duvida">Dúvida sobre reciclagem</option>
+                                <option value="sugestao">Sugestão de conteúdo</option>
+                                <option value="experiencia">Compartilhar experiência</option>
+                                <option value="parceria">Proposta de parceria</option>
+                                <option value="erro">Reportar erro no site</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Quero receber dicas de sustentabilidade por e-mail
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Concordo com a política de privacidade *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <span class="btn-loading" style="display: none;">Enviando...</span>
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="success-message" style="display: none;">
+                        <h3>Mensagem Enviada com Sucesso!</h3>
+                        <p>Obrigado pelo contato! Responderemos em breve.</p>
+                    </div>
+                    
+                    <h2>Outras Formas de Contato</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon"></div>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>gabriel.gomes@sustentabilidade.com</p>
+                                <small>Resposta em até 24 horas</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>(11) 99999-9999</p>
+                                <small>Segunda a sexta, 9h às 18h</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"></div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>https://www.linkedin.com/in/gabsgomesdasilva/</p>
+                                <small>Perfil profissional</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"></div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>https://www.instagram.com/gabrix_80/</p>
+                                <small>Perfil pessoal</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"></div>
+                            <div>
+                                <h4>Twitter</h4>
+                                <p>https://x.com/gabrixz0</p>
+                                <small>Perfil pessoal</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"></div>
+                            <div>
+                                <h4>UNIP - Campus</h4>
+                                <p>Ciência da Computação</p>
+                                <small>Projeto Acadêmico APS</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2>Links Úteis</h2>
+                    <div class="useful-links">
+                        <div class="link-category">
+                            <h4>Órgãos Governamentais</h4>
+                            <ul>
+                                <li><a href="https://www.gov.br/mma/pt-br" target="_blank">Ministério do Meio Ambiente</a></li>
+                                <li><a href="https://www.ibge.gov.br" target="_blank">IBGE - Instituto Brasileiro de Geografia e Estatística</a></li>
+                                <li><a href="https://www.gov.br/pt-br" target="_blank">Portal do Governo Federal</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-category">
+                            <h4>Organizações</h4>
+                            <ul>
+                                <li><a href="https://abrelpe.org.br/" target="_blank">ABRELPE - Associação Brasileira de Limpeza Pública</a></li>
+                                <li><a href="https://www.mncr.org.br/" target="_blank">MNCR - Movimento Nacional dos Catadores</a></li>
+                                <li><a href="https://www.cempre.org.br/" target="_blank">CEMPRE - Compromisso Empresarial para Reciclagem</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-category">
+                            <h4>Educação</h4>
+                            <ul>
+                                <li><a href="https://www.unip.br/" target="_blank">UNIP - Universidade Paulista</a></li>
+                                <li><a href="https://www.mec.gov.br/" target="_blank">MEC - Ministério da Educação</a></li>
+                                <li><a href="https://www.wwf.org.br/" target="_blank">WWF Brasil</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <aside class="sidebar">
+                    <div class="contact-info">
+                        <h3>Informações do Projeto</h3>
+                        <div class="info-item">
+                            <strong>Curso:</strong>
+                            <p>Ciência da Computação</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Instituição:</strong>
+                            <p>UNIP - Universidade Paulista</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Disciplina:</strong>
+                            <p>APS - Atividades Práticas Supervisionadas</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Desenvolvedor:</strong>
+                            <p>Gabriel Gomes - RA: T9250D0</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Semestre:</strong>
+                            <p>1º Semestre - 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq">
+                        <h3>Perguntas Frequentes</h3>
+                        <div class="faq-item">
+                            <h4>Como separar o lixo corretamente?</h4>
+                            <p>Veja nossa <a href="dicas.html">página de dicas</a> para um guia completo!</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Onde encontrar pontos de coleta?</h4>
+                            <p>Consulte a prefeitura local ou cooperativas de catadores da sua região.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Como calcular meu impacto ambiental?</h4>
+                            <p>Use nossa <a href="index.html#calculator">calculadora de impacto</a> na página inicial!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-share">
+                        <h3>Compartilhe</h3>
+                        <p>Ajude a espalhar a conscientização ambiental!</p>
+                        <div class="share-buttons">
+                            <button onclick="shareOnSocialMedia('facebook' )" class="share-btn facebook">
+                                Facebook
+                            </button>
+                            <button onclick="shareOnSocialMedia('twitter')" class="share-btn twitter">
+                                Twitter
+                            </button>
+                            <button onclick="shareOnSocialMedia('whatsapp')" class="share-btn whatsapp">
+                                WhatsApp
+                            </button>
+                            <button onclick="shareOnSocialMedia('linkedin')" class="share-btn linkedin">
+                                LinkedIn
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Juntos Podemos Mais!</h2>
+                <p>Sua participação é fundamental para construirmos um futuro mais sustentável.</p>
+                <div class="cta-buttons">
+                    <a href="dicas.html" class="btn btn-primary">Ver Dicas Práticas</a>
+                    <a href="reciclagem.html" class="btn btn-secondary">Aprender sobre Reciclagem</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Projeto Acadêmico</h4>
+                    <p>Site desenvolvido para APS UNIP</p>
+                    <p>Ciência da Computação</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Desenvolvedor</h4>
+                    <p>Gabriel Gomes</p>
+                    <p>RA: T9250D0</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sustentabilidade</h4>
+                    <p>Cada clique conta para um futuro melhor</p>
+                    <p>&copy; 2025 - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
